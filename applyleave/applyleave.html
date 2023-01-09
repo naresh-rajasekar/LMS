@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/applyleave/applyleave.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <title>Employee Services</title>
+    <title>Apply for Leave</title>
+</head>
+
+<body>
+    <header id="header">
+        <h1>Paid Leave Application</h1>
+
+    </header>
+
+    <h2 id="h2">Please fill the required details</h2>
+    <form method="put">
+        
+            <label for="leavetype"><strong>Type of Leave:</strong></label>
+            <select id="leavetype" onchange="changeFunc(value)">
+                <option id="noid" name="noname" value="novalue">Please Select</option>
+                <option id="casual" name="casual" value="casual" >Casual Leave</option>
+                <option id="emergency " name="emergency" value="emergency">Emergency Leave</option>
+            </select><br><br>
+    <main class="parent-container">     
+        <div id="main-container">
+            <div class="text-container">
+            <label for="reason"> <strong>Reason:</strong></label><br>
+            <textarea id="reason" name="reason" rows="3" type="text" cols="40" placeholder="Enter the reason for Leave"
+                required></textarea><br><br>
+            </div> 
+        </div>
+
+    <article class="sub-container">
+        <div id="calender">
+            <label for="fromdate"><strong>From:</strong></label>
+            <input type="date" id="fromdate" name="fromday" required>
+            <label for="todate"><strong>To:</strong></label>
+            <input type="date" id="todate" name="todate" required><br><br>
+         
+        </div>
+        <div id="disabled-container">
+            <label for="days"><strong>Total Days:</strong></label>
+            <input type="number" id="days" name="days" disabled>
+    
+            <label for="plavailable"><strong>PL Available:</strong></label>
+            <input type="text" id="plavailable" name="plavailable" disabled>
+            <div id="button-container">
+                <button type="submit" name="submit" id="submit"onclick="showtext()">Submit</button>
+                <button id="logout" onclick="cancel()">Go Back</button>
+        
+            </div>
+        </div> 
+    </article>
+   
+</main>   
+    
+
+       
+       
+        <!-- <button value="status" name="status">Status</button>oninput="handleChange()"  -->
+
+    </form>
+    
+
+    <script src="/applyleave/applyleave.js"></script>
+</body>
+
+</html>

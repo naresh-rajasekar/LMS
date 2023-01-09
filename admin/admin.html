@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/admin/admin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap" rel="stylesheet">
+    <title>Admin</title>
+</head>
+
+<body>
+    <h1 id="h1-element">Hi Admin!!!!!</h1>
+    <div class="container">
+        <h3 id="h3-element">Please login with the required details</h3>
+        <!-- <form> -->
+            <label for="user"><strong>Username</strong> <br>
+                <input id="user" type="text" name="username" placeholder="Enter Username" required><br><br>
+            </label>
+            <label for="pass"><strong>Password</strong><br>
+                <input id="pass" type="password" name="password" placeholder="Enter Password" required><br><br>
+            </label>
+            <button type="submit" value="submit" onclick="adminLogin()">login</button>
+            <button  onclick="cancel()" id="cancel">Cancel</button>
+        <!-- </form> -->
+    </div>
+
+
+    <script src="/admin/admin.js"></script>
+</body>
+
+</html>
